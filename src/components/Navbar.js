@@ -1,8 +1,16 @@
 import React from "react";
 import '../componets_css/navbar.css'
 function NavBar() {
+
+const NavStyle = {
+    height: "75px",
+    zIndex: "2",
+    fontSize: "22px",
+}
+
+
   return (
-    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" style={NavStyle}>
       <a class="navbar-brand ms-5 link-info" href="#">
         My Portfolio
       </a>
@@ -25,7 +33,7 @@ function NavBar() {
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-info" href="#">
+            <a class="nav-link link-info" href="landToAbout">
               About
             </a>
           </li>

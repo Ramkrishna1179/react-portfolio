@@ -1,14 +1,13 @@
 
-#home{
-  background-image: url("http://john.wethemez.com/static/media/profile.8ca05271.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 880px;
-  position: absolute;
-  margin-top: -220px;
-  
-}
-#home1{
-  margin-top: 400px;
+.heading{
+  margin: 5px;
+  padding: 17px;
+  background: rgba(0,0,0,.3);
+  color: white;
+  border-radius: 50%;
 }
 
+.heading:hover{
+  background: white;
+  color: black;
+}
