@@ -11,7 +11,6 @@ function Home() {
       height: "900px",
       position: "relative",
       marginTop: "-150px",
-      backgroundcolor: "red",
     },
 
     HomeTitleDiv: {
@@ -33,7 +32,11 @@ function Home() {
     },
   };
   return (
-    <div className="container-fluid  text-center" style={styles.HomePage}>
+    <div
+      className="container-fluid  text-center bg-image"
+      style={styles.HomePage}
+      id="landToHome"
+    >
       <div style={styles.HomeTitleDiv} className="ms-5">
         <h4 style={{ color: "white", letterSpacing: "5px" }}> HELLO</h4>
         <h1 style={styles.HomeHeading}>I am Ramkrishna Yadav.</h1>
