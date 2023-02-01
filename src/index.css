@@ -1,5 +1,47 @@
-ul{
-  width: 100%;
-  justify-content: space-around;
+ul {
+  width: 80%;
+  justify-content: space-evenly;
+}
+.nav-link {
+  color: #ffffff !important;
 }
 
+.nav-link {
+  /* display: inline-block; */
+  position: relative;
+  color: #0087ca;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.50s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+h3 {
+  color: #040c2c;
+  font-family: Montserrat, sans-serif;
+}
+.card:hover {
+  border: none;
+}
+.btn:hover {
+  background-color: teal !important;
+  border: 2px solid  #040c2c;
+}
+
+#Add_Ul>li{
+  color: #797979;
+ font-size: 18px;
+}

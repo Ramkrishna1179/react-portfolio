@@ -1,17 +1,20 @@
 import React from "react";
-import '../componets_css/navbar.css'
+import "../componets_css/navbar.css";
 function NavBar() {
-
-const NavStyle = {
+  const NavStyle = {
     height: "75px",
-    zIndex: "2",
     fontSize: "22px",
-}
-
-
+    zIndex: "1001",
+    // background: "#ffffffff",
+    background : "#FF8B13",
+  };
   return (
-    <nav class="navbar navbar-expand-lg bg-light fixed-top" style={NavStyle}>
-      <a class="navbar-brand ms-5 link-info" href="#">
+    <nav class="navbar navbar-expand-lg  fixed-top" style={NavStyle}>
+      <a
+        class="navbar-brand ms-5 nav-link"
+        href="#"
+        style={{ fontSize: "22px" }}
+      >
         My Portfolio
       </a>
       <button
@@ -28,22 +31,22 @@ const NavStyle = {
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link link-info" href="#">
+            <a class="nav-link" href="#landToHome">
               Home <span class="sr-only"></span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-info" href="landToAbout">
+            <a class="nav-link" href="#landToAbout">
               About
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-info" href="#">
+            <a class="nav-link" href="#landToservice">
               Services
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-info" href="#">
+            <a class="nav-link" href="#landToContact">
               Contact
             </a>
           </li>
