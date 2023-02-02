@@ -1,12 +1,21 @@
 import React from "react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 class contact extends React.Component {
+  componentDidMount() {
+    AOS.init({
+      offset: 100,
+      duration: 2000,
+      delay: 50,
+      mirror: true,
+    });
+  }
   render() {
     return (
-      <div className="container-fluid bg-light" id="landToContact">
-        <div className="container mt-5 pt-5 ps-5 ">
+      <div className="container-fluid bg-light pt-5 pb-5" id="landToContact">
+        <div className="container mt-5 ps-5 ">
           <div className="row text-center ps-5">
-            <div className="col-md-5 text-start">
+            <div className="col-md-5 text-start" data-aos="fade-up">
               <h1>Contact Info</h1>
               <ul className="p-5" id="Add_Ul">
                 <li className="d-flex py-2">
@@ -30,7 +39,7 @@ class contact extends React.Component {
                 </li>
               </ul>
             </div>
-            <div className="col-md-7 text-start">
+            <div className="col-md-7 text-start" data-aos="fade-down">
               <h1>Contact form</h1>
               <form>
                 <ul className="text-start p-5 pe-0">
@@ -73,7 +82,7 @@ class contact extends React.Component {
                   <li className="mt-4" style={{ listStyle: "none" }}>
                     <button
                       className="btn btn-primary px-3"
-                      style={{ fontSize: "22px", background: "#040c2c"}}
+                      style={{ fontSize: "22px", background: "#040c2c" }}
                     >
                       Send Message
                     </button>

@@ -4,13 +4,13 @@ ul {
 }
 .nav-link {
   color: #ffffff !important;
+  position: relative;
 }
 
-.nav-link {
-  /* display: inline-block; */
-  position: relative;
+/* .nav-link {
+  display: inline-block;
   color: #0087ca;
-}
+} */
 
 .nav-link::after {
   content: "";
@@ -44,4 +44,16 @@ h3 {
 #Add_Ul>li{
   color: #797979;
  font-size: 18px;
+}
+
+.card>div>i:hover{
+  font-size: 50px !important;
+  color: tomato;
+}
+
+.footer-area {
+  background: #040c2c;
+  position: relative;
+  padding: 60px 0;
+  height: auto;
 }

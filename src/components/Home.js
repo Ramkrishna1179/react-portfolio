@@ -1,7 +1,18 @@
 import { hover } from "@testing-library/user-event/dist/hover";
-import React from "react";
+import React, { useEffect } from "react";
 import "../componets_css/home.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Home() {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 1000,
+      delay: 50,
+      mirror: true,
+    });
+  });
+
   const styles = {
     HomePage: {
       backgroundImage:
@@ -14,7 +25,6 @@ function Home() {
     },
 
     HomeTitleDiv: {
-      // marginTop: "570px",
       paddingTop: "470px",
     },
 
@@ -39,11 +49,13 @@ function Home() {
     >
       <div style={styles.HomeTitleDiv} className="ms-5">
         <h4 style={{ color: "white", letterSpacing: "5px" }}> HELLO</h4>
-        <h1 style={styles.HomeHeading}>I am Ramkrishna Yadav.</h1>
+        <h1 style={styles.HomeHeading} data-aos="fade-up">
+          I am Ramkrishna Yadav.
+        </h1>
         <h2 style={{ fontSize: "30px", color: "white" }}>
           Sasta Frontend Developer
         </h2>
-        <div className="mt-3 ms-5 homeIcons">
+        <div className="mt-3 ms-5 homeIcons" data-aos="fade-up">
           <a href="https://www.facebook.com/login/">
             <i class="fa-brands heading ms-3 fa-facebook-f"></i>
           </a>
