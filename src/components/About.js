@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function AboutMe() {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 2000,
+      delay: 50,
+      mirror: true,
+    });
+  });
   const styles = {
     about: {
       marginTop: " 50px",
@@ -19,14 +29,14 @@ function AboutMe() {
       letterSpacing: "1px",
       lineHeight: "1.5",
       marginBottom: "30px",
-      fontSize: "18px",
+      fontSize: "16px",
     },
   };
 
   return (
     <div className="container d-flex mt-5 overflow-hidden" id="landToAbout">
-      <div className="row">
-        <div style={styles.about} className="col-md-7 ps-5 ">
+      <div className="row" data-aos="slide-right">
+        <div style={styles.about} className="col-md-7 ps-5">
           <h1>About Me</h1>
           <p style={styles.about_p_1}>Trainee Front-End Developer,</p>
           <p style={styles.about_p_2} className="fst-italic">
@@ -46,12 +56,14 @@ function AboutMe() {
           </p>
 
           <div>
-            <button
-              style={{ fontSize: "22px", background: "#040c2c" }}
-              className="btn btn-primary"
-            >
-              Hire Me
-            </button>
+            <a href="#landToContact">
+              <button
+                style={{ fontSize: "22px", background: "#040c2c" }}
+                className="btn btn-primary"
+              >
+                Hire Me
+              </button>
+            </a>
             <button
               style={{ fontSize: "22px", background: "#040c2c" }}
               className="btn btn-primary ms-5"

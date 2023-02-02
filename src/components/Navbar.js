@@ -1,11 +1,10 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "../componets_css/navbar.css";
 function NavBar() {
   const NavStyle = {
     height: "75px",
-    fontSize: "22px",
+    fontSize: "20px",
     zIndex: "1001",
-    // background: "#ffffffff",
     background : "#FF8B13",
   };
   return (
@@ -13,7 +12,7 @@ function NavBar() {
       <a
         class="navbar-brand ms-5 nav-link"
         href="#"
-        style={{ fontSize: "22px" }}
+        style={{ fontSize: "26px" }}
       >
         My Portfolio
       </a>
@@ -29,7 +28,7 @@ function NavBar() {
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mx-5 px-5">
           <li class="nav-item active">
             <a class="nav-link" href="#landToHome">
               Home <span class="sr-only"></span>
@@ -43,6 +42,11 @@ function NavBar() {
           <li class="nav-item">
             <a class="nav-link" href="#landToservice">
               Services
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#landToPortfolio">
+              Portfolio
             </a>
           </li>
           <li class="nav-item">

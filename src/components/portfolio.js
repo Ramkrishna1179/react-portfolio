@@ -1,31 +1,43 @@
 import React, { useEffect, useState } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function Portfolio() {
-  
-// const [i,setCount] = useState(1);
-
-useEffect(()=>{
-  for (let i = 1; i <100; i++){
-     setInterval(()=>{
-      document.getElementById("count").innerHTML =i;
-   },1000)
-  }  
-})
-
+  useEffect(()=>{
+    AOS.init({
+      offset: 200,
+      duration: 2000,
+      delay:50,
+      mirror:true,
+    });
+  })
   return (
-    <div className="container-fluid bg-white">
-      <div className="container mt-5">
+    <div className="container-fluid bg-white pt-5 pb-5" id="landToPortfolio">
+      <div className="container mt-5 mb-5">
         <div className="text-center">
           <h1>My Portfolio</h1>
-          <p className="text-secondary">
+          <p className="text-secondary mt-3">
             <em>I love what I do. I take great pride in what I do.</em>
           </p>
+          <hr
+            style={{
+              width: "8%",
+              border: "1px solid grey",
+              display: "inline-block",
+              opacity: "1",
+            }}
+          />
         </div>
         <div className="row">
-          <div className="col-md-3 col-sm-6 text-center mt-5">
+          <div className="col-md-3 col-sm-6 text-center mt-5" data-aos="flip-left">
             <i class="fa-solid fa-briefcase mb-3 text-secondary fs-2"></i>
-            <h3 className="t_color fs-2 fw-bolder" id="count" data-countup="true">
-             
+            <h3
+              className="t_color fs-2 fw-bolder"
+              id="count"
+              data-countup="true"
+            >
+             200 
             </h3>
             <p className="text-secondary fs-4">Total Projects</p>
           </div>
@@ -46,7 +58,7 @@ useEffect(()=>{
             <p className="text-secondary fs-4">Years of Experience</p>
           </div>
 
-          <div className="col-md-3 col-sm-6 text-center mt-5">
+          <div className="col-md-3 col-sm-6 text-center mt-5" data-aos="flip-left">
             <i class="fa-solid fa-trophy mb-3 text-secondary fs-2"></i>
             <h3 className="t_color fs-2 fw-bolder" data-countup="true">
               10
