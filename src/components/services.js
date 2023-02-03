@@ -1,17 +1,16 @@
 import React from "react";
 import { hover } from "@testing-library/user-event/dist/hover";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 class Services extends React.Component {
-
   componentDidMount() {
     AOS.init({
       offset: 100,
       duration: 1000,
-      delay:50,
-      mirror:true,
+      delay: 50,
+      mirror: true,
     });
-}
+  }
 
   render() {
     const styles = {
@@ -50,13 +49,13 @@ class Services extends React.Component {
             <em>I love what I do. I take great pride in what I do.</em>
           </p>
           <p className="mx-auto mt-4" style={{ width: "8%" }}>
-            <hr style={{ border: "1px solid grey",opacity: "1"}} />
+            <hr style={{ border: "1px solid grey", opacity: "1" }} />
           </p>
         </div>
 
         <div className="container pb-5">
           <div className="row mx-5 mb-4">
-            <div className="col-sm-6 col-md-4" data-aos="fade-up" >
+            <div className="col-sm-6 col-md-4" data-aos="fade-up">
               <div className=" card">
                 <div style={styles.cart} className="alkhdj">
                   <i className="fa-solid fa-desktop" style={styles.icon}></i>
@@ -99,7 +98,7 @@ class Services extends React.Component {
               </div>
             </div>
 
-            <div className="col-sm-6 col-md-4" data-aos="fade-up" >
+            <div className="col-sm-6 col-md-4" data-aos="fade-up">
               <div className=" card">
                 <div style={styles.cart}>
                   <i

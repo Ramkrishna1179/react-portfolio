@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 function AboutMe() {
   useEffect(() => {
     AOS.init({
-      offset: 200,
+      offset: 150,
       duration: 2000,
       delay: 50,
       mirror: true,
