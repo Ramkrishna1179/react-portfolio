@@ -21,6 +21,7 @@ function Home() {
       backgroundRepeat: "no-repeat",
       height: "900px",
       position: "relative",
+
       marginTop: "-150px",
     },
 

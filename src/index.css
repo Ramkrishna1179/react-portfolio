@@ -1,3 +1,10 @@
+
+body{
+  font-family: sans-serif monospace;
+ }
+
+
+
 ul {
   width: 80%;
   justify-content: space-evenly;
@@ -57,3 +64,14 @@ h3 {
   padding: 60px 0;
   height: auto;
 }
+
+.html5{
+  margin-left:-10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-bottom: -18px
+}
+/* .h1_mar_top{
+margin-top: -8 !important;
+padding-top: -8px;
+} */
