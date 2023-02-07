@@ -54,8 +54,8 @@ class Services extends React.Component {
         </div>
 
         <div className="container pb-5">
-          <div className="row mx-5 mb-4">
-            <div className="col-sm-6 col-md-4" data-aos="fade-up">
+          <div className="row">
+            <div className="col-sm-6 col-md-6 col-lg-4" data-aos="fade-up">
               <div className=" card">
                 <div style={styles.cart} className="alkhdj">
                   <i className="fa-solid fa-desktop" style={styles.icon}></i>
@@ -75,7 +75,7 @@ class Services extends React.Component {
               </div>
             </div>
 
-            <div className="col-sm-6 col-md-4">
+            <div className="col-sm-6 col-md-6 col-lg-4">
               <div className="card border-none">
                 <div className="lj" style={styles.cart}>
                   <i
@@ -98,7 +98,7 @@ class Services extends React.Component {
               </div>
             </div>
 
-            <div className="col-sm-6 col-md-4" data-aos="fade-up">
+            <div className="col-sm-6 col-md-6 col-lg-4" data-aos="fade-up">
               <div className=" card">
                 <div style={styles.cart}>
                   <i
@@ -120,10 +120,8 @@ class Services extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="row mx-5 mb-4">
-            <div className="col-sm-6 col-md-4">
+            <div className="col-sm-6 col-md-6 col-lg-4 mt-3">
               <div className=" card ">
                 <div style={styles.cart}>
                   <i class="fa-solid fa-stairs" style={styles.icon}></i>
@@ -143,7 +141,7 @@ class Services extends React.Component {
               </div>
             </div>
 
-            <div className="col-sm-6 col-md-4" data-aos="fade-up">
+            <div className="col-sm-6 col-md-6 col-lg-4 mt-3" data-aos="fade-up">
               <div className=" card">
                 <div style={styles.cart}>
                   <i class="fa-solid fa-gears" style={styles.icon}></i>
@@ -163,7 +161,7 @@ class Services extends React.Component {
               </div>
             </div>
 
-            <div className="col-sm-6 col-md-4">
+            <div className="col-sm-6 col-md-6 col-lg-4 mt-3">
               <div className=" card">
                 <div style={styles.cart}>
                   <i
@@ -186,6 +184,7 @@ class Services extends React.Component {
               </div>
             </div>
           </div>
+          <div className="row"></div>
         </div>
       </div>
     );

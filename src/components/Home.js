@@ -54,7 +54,7 @@ function Home() {
           I am Ramkrishna Yadav.
         </h1>
         <h2 style={{ fontSize: "30px", color: "white" }}>
-          Sasta Frontend Developer
+           Frontend Developer
         </h2>
         <div className="mt-3 ms-5 homeIcons" data-aos="fade-up">
           <a href="https://www.facebook.com/login/">
@@ -75,7 +75,4 @@ function Home() {
   );
 }
 export default Home;
-// style={styles.heading}
-// style={styles.heading}
-// style={styles.heading}
-// style={styles.heading}
+
