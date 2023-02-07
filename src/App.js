@@ -7,17 +7,19 @@ import Contact from "./components/contact";
 import Portfolio from "./components/portfolio";
 import Footer from "./components/footer";
 import Skills from "./components/skills";
+import Like from "./components/like";
 function App() {
   return (
     <div className="App">
       <NavBar />
       <Home />
       <AboutMe />
-      <Services /> 
+      <Services />
       <Skills />
       <Portfolio />
-     <Contact />
-     <Footer />
+      <Contact />
+      <Like />
+      <Footer />
     </div>
   );
 }

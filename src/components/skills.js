@@ -1,8 +1,7 @@
-import React,{useEffect}from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Skills() {
-
   useEffect(() => {
     AOS.init({
       offset: 150,
@@ -12,60 +11,67 @@ function Skills() {
     });
   });
 
-
   return (
     <div className="container-fluid">
-      <h1 style={{paddingLeft:"100px",margin:"50px 0px 50px 0px"}}>Education & Skills</h1>
+      <h1 style={{ paddingLeft: "100px", margin: "50px 0px 50px 0px" }}>
+        Education & Skills
+      </h1>
       <div className="container">
         <div className="row">
-          <div className="col-lg-5 col-md-5" >
-            <div style={{margin:"0px 0px 50px 40px"}}>
-            <div style={{ backgroundColor: "#f7f7ff",marginRight:"80px",borderRadius:"10px"}} className="pb-5">
-              <div className="ps-5 pt-5"  data-aos="fade-up">
-                <p style={{ color: "#0b0b13", marginBottom: "5px" }}>
-                  2021-2022
-                </p>
-                <h5 style={{ color: "#0b0b13", marginBottom: "5px" }}>
-                  Front-End Web Developement
-                </h5>
-                <p style={{ color: "#0b0b13", marginBottom: "5px" }}>
-                  Masai School
-                </p>
-              </div>
+          <div className="col-lg-5 col-md-6">
+            <div style={{ margin: "0px 0px 50px 40px" }}>
+              <div
+                style={{
+                  backgroundColor: "#f7f7ff",
+                  marginRight: "80px",
+                  borderRadius: "10px",
+                }}
+                className="pb-5"
+              >
+                <div className="ps-5 pt-5" data-aos="fade-up">
+                  <p style={{ color: "#0b0b13", marginBottom: "5px" }}>
+                    2021-2022
+                  </p>
+                  <h5 style={{ color: "#0b0b13", marginBottom: "5px" }}>
+                    Front-End Web Developement
+                  </h5>
+                  <p style={{ color: "#0b0b13", marginBottom: "5px" }}>
+                    Masai School
+                  </p>
+                </div>
 
-              <div className="pt-3 ps-5" data-aos="fade-up">
-                <p style={{ color: "#0b0b13", marginBottom: "5px" }}>
-                  2017-2021
-                </p>
-                <h5 style={{ color: "#0b0b13", marginBottom: "5px" }}>
-                  B.Tech Mechanical Engineering
-                </h5>
-                <p style={{ color: "#0b0b13", marginBottom: "5px" }}>
-                  Sage University Indore
-                </p>
-              </div>
+                <div className="pt-3 ps-5" data-aos="fade-up">
+                  <p style={{ color: "#0b0b13", marginBottom: "5px" }}>
+                    2017-2021
+                  </p>
+                  <h5 style={{ color: "#0b0b13", marginBottom: "5px" }}>
+                    B.Tech Mechanical Engineering
+                  </h5>
+                  <p style={{ color: "#0b0b13", marginBottom: "5px" }}>
+                    Sage University Indore
+                  </p>
+                </div>
 
-              <div className="pt-3 ps-5" data-aos="fade-up">
-                <p style={{ color: "#0b0b13", marginBottom: "5px" }}>
-                  2020-2021
-                </p>
-                <h5 style={{ color: "#0b0b13", marginBottom: "5px" }}>
-                  Masterr certificate in CAD/CAM
-                </h5>
-                <p style={{ color: "#0b0b13", marginBottom: "5px" }}>
-                  Indo German Tool Room Indore
-                </p>
+                <div className="pt-3 ps-5" data-aos="fade-up">
+                  <p style={{ color: "#0b0b13", marginBottom: "5px" }}>
+                    2020-2021
+                  </p>
+                  <h5 style={{ color: "#0b0b13", marginBottom: "5px" }}>
+                    Masterr certificate in CAD/CAM
+                  </h5>
+                  <p style={{ color: "#0b0b13", marginBottom: "5px" }}>
+                    Indo German Tool Room Indore
+                  </p>
+                </div>
               </div>
-            </div>
-            
             </div>
           </div>
-          <div className="col-lg-7 col-md-7 pt-4">
+          <div className="col-lg-7 col-md-6 pt-4">
             <div className="container">
               <div className="row mt-4" data-aos="fade-up">
                 <div className="col-3"></div>
                 <div className="col-9">
-                <h6 className="html5">Javascript</h6>
+                  <h6 className="html5">Javascript</h6>
                 </div>
                 <div className="col-3">
                   <h2 className="text-end me-3">90%</h2>
@@ -84,9 +90,9 @@ function Skills() {
               </div>
 
               <div className="row mt-4" data-aos="fade-up">
-              <div className="col-3"></div>
+                <div className="col-3"></div>
                 <div className="col-9">
-                <h6 className="html5">HTML5</h6>
+                  <h6 className="html5">HTML5</h6>
                 </div>
                 <div className="col-3">
                   <h2 className="text-end me-3">85%</h2>
@@ -105,9 +111,9 @@ function Skills() {
               </div>
 
               <div className="row mt-4" data-aos="fade-up">
-              <div className="col-3"></div>
+                <div className="col-3"></div>
                 <div className="col-9">
-                <h6 className="html5">CSS3</h6>
+                  <h6 className="html5">CSS3</h6>
                 </div>
                 <div className="col-3">
                   <h2 className="text-end me-3">75%</h2>
@@ -126,9 +132,9 @@ function Skills() {
               </div>
 
               <div className="row mt-4" data-aos="fade-up">
-              <div className="col-3"></div>
+                <div className="col-3"></div>
                 <div className="col-9">
-                <h6 className="html5">React</h6>
+                  <h6 className="html5">React</h6>
                 </div>
                 <div className="col-3">
                   <h2 className="text-end me-3">30%</h2>
@@ -147,9 +153,9 @@ function Skills() {
               </div>
 
               <div className="row mt-4" data-aos="fade-up">
-              <div className="col-3"></div>
+                <div className="col-3"></div>
                 <div className="col-9">
-                <h6 className="html5">Bootstrap5</h6>
+                  <h6 className="html5">Bootstrap5</h6>
                 </div>
                 <div className="col-3">
                   <h2 className="text-end me-3">50%</h2>
